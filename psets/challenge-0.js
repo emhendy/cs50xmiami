@@ -5,6 +5,8 @@ The Calculator
   square that number, and return the result.
   It should also log a string like "The result of squaring the number 3 is 9."
 
+
+
 - Write a function called halfNumber that will take one argument (a number),
   divide it by 2, and return the result.
   It should also log a string like "Half of 5 is 2.5.".
@@ -27,3 +29,47 @@ Write a function that will take one argument (a number) and perform the followin
 */
 
 // write your solution here...
+
+function squaredNumber (number) {
+  console.log("The result of squaring the number " + number + " is " + number * number + ".")
+  return number * number;
+
+
+}
+
+squaredNumber(4);
+
+function halfNumber (num) {
+  var res = num /2;
+  console.log("Half of " + num + " is " + res + ".")
+  return res;
+}
+
+halfNumber (10);
+
+function percentOf (num1, num2) {
+  var percent = num1/num2 * 100;
+  console.log(num1 + " is " + percent + "% of " +num2)
+  return percent;
+}
+
+percentOf(10, 40);
+
+function areaOfCircle (radius) {
+  var result = Math.PI * (radius * radius);
+  result = Math.floor (result * 100) / 100;
+  console.log("The area for a circle with radius " + radius +" is " + result)
+  return result;
+}
+
+areaOfCircle (2);
+
+function calc (number) {
+  var half = halfNumber(number);
+  var square = squaredNumber(half);
+  var area = areaOfCircle(square);
+  var percent = percentOf(area, square);
+  console.log(percent)
+}
+
+calc(2);
