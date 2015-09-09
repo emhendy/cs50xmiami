@@ -13,4 +13,8 @@ fixStart('babble'): 'ba**le'
 
 function fixStart(s) {
   // write your solution here...
+  var first = s[0];
+  var newString = s.replace(new RegExp(first, "gm"), "*");
+  console.log(newString)
 }
+fixStart("hello there, nice to say hi")

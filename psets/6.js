@@ -13,5 +13,12 @@ Look up the JavaScript string reference to find methods which may be useful!
 */
 
 function mixUp(a, b) {
-  // write your solution here...
+  var a1 = a.substr(0, 2);
+  var b1 = b.substr(0, 2);
+  a = b1 + a.substr(2, a.length);
+  b = a1 + b.substr(2, b.length);
+  console.log(a + " " + b)
+  return a + ' ' + b;
 }
+
+mixUp ("hello", "stinker");

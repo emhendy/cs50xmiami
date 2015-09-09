@@ -18,4 +18,21 @@ For example:
 
 function verbing(word) {
   // write your solution here...
+  var len = word.length;
+  var lastThree = word.substr(word.length - 3);
+
+  if (len >= 3) {
+    if (lastThree == "ing") {
+      word = word + "ly";
+    }
+    else {
+      word = word + "ing";
+    }
+  }
+  else {
+    word = word;
+  }
+  console.log(word)
+
 }
+verbing("swimming")
