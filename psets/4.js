@@ -11,3 +11,9 @@ http://www.mathsisfun.com/temperature-conversion.html
 */
 
 // write your solution here...
+var celTemp = 14;
+var farTemp = ((celTemp * 9) / 5) + 32;
+console.log(celTemp + "°C is " + farTemp + "°F")
+
+var temp = ((farTemp - 32) * 5) / 9;
+console.log(farTemp + "°F is " + temp + "°C")
