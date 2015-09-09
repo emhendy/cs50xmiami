@@ -14,9 +14,9 @@ Why pay a fortune teller when you can just program your fortune yourself?
 
 var numChildren = 2;
 
-var partnerName = "Taylor Swift";
+var partnerName = "Tom Hiddleston";
 
-var geoLocal = "Miami";
+var geoLocal = "San Diego";
 
 var jobTitle = "Hacker";
 
