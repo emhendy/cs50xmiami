@@ -9,3 +9,12 @@ Create an array to hold your top choices (colors, presidents, whatever).
 */
 
 // write your solution here...
+var actors = [
+  "Tom Hiddleston",
+  "Dave Franco",
+  "Ben Affleck"
+];
+
+for (var i = 0; i < 3; i++) {
+  console.log("My #" + (i + 1) + " choice is " + actors[i] + ".")
+};
