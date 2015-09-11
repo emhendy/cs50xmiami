@@ -11,3 +11,14 @@ It's like IMDB, but much much smaller!
 */
 
 // write your solution here...
+var movie = {
+  title: "Remember the Titans",
+  duration: 95,
+  stars: ["Ryan Gosling", "Denzel Washington", "Some Other Guys"]
+}
+
+function print (movie) {
+  console.log(movie.title + " lasts for " + movie.duration + " minutes. Stars: " + movie.stars + ".")
+}
+
+print(movie);

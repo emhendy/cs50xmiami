@@ -18,3 +18,19 @@ Never forget another recipe!
 */
 
 // write your solution here...
+var recipe = {
+  title: "poop",
+  serves: 2,
+  ingredients: [
+    "food",
+    "more food",
+    "lots of food"]
+};
+
+console.log(recipe.title)
+console.log("Serves: " + recipe.serves)
+console.log("Ingredients:")
+
+for (i in recipe.ingredients) {
+  console.log(recipe.ingredients[i])
+}

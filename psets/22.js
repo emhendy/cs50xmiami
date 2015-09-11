@@ -17,3 +17,29 @@ Keep track of which books you read and which books you want to read!
 */
 
 // write your solution here...
+var books = [
+  {
+    title: "Harry Potter",
+    author: "JK Rowling",
+    alreadyRead: true,
+  },
+  {
+    title: "Frankenstein",
+    author: "Mary Shelley",
+    alreadyRead: true,
+  },
+  {
+    title: "Lord of the Rings",
+    author: "JRR Tolkien",
+    alreadyRead: false,
+  }
+]
+
+for (i in books) {
+  if (books[i].alreadyRead === true) {
+    console.log("You've already read \"" + books[i].title + "\" by " + books[i].author + ".")
+  }
+  else {
+    console.log ("You still need to read \"" + books[i].title + "\" by " + books[i].author + ".")
+  }
+}
